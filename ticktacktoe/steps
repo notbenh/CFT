@@ -1,0 +1,68 @@
+Possible progression for TTT?
+
+01: just print board
+123
+456
+789
+
+02: write code in such a way that the status of the board is always known
+- likely to be done with a global variable, for sake of illustration I'll call $board
+
+03: create reusable code (ie function) that allows for any play to be played on $board
+- so if I was to say something like draw_board($board,2,O) then 'O' will be placed on '2' of $board
+
+...
+
+10: take user input for both players
+Rules https://en.wikipedia.org/wiki/Tic-tac-toe
+X plays first
+- 1 is pressed then X is placed on 1
+- 2 is pressed then O is placed on 2
+- 5 is pressed then X is placed on 3
+...
+
+Program should wait for user input before redrawing the play
+
+example output:
+123
+456
+789
+X play: _1
+
+X23
+456
+789
+O play: _2
+
+XO3
+456
+789
+X play: _5
+
+XO3
+4X6
+789
+X play: _5
+
+
+11: output if CLI should overwrite the board rather than newline
+
+...
+
+20: program should know when a win occurs and be able to show who won
+
+...
+
+30: program should be able to predict with some percentage the likelihood of a win at each play
+
+...
+
+40: add option to play computer
+
+...
+
+50: computer player
+
+...
+
+99: include a reference to War Games
